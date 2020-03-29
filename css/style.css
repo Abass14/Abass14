@@ -1,0 +1,179 @@
+*{
+	overflow-x: hidden;
+	font-family: 'Amiri', serif;
+}
+/*NAV*/
+
+.nav-one{
+	/*height: 60px;*/
+	padding: 0px;
+}
+
+.nav-one{
+	padding: 20px 50px;
+}
+
+.nav-one a{
+	font-size: 25px;
+	text-decoration: none;
+	color: white !important;
+	display: inline;
+}
+
+.nav-one img{
+	float: right;
+}
+
+.toggle-menu{
+	display: inline;
+	font-size: 25px;
+}
+
+.side-menu{
+	height: 100%;
+	width: 0px;
+	background-color: rgba(24, 21, 237, 0.7);
+	position: fixed;
+  	z-index: 1;
+  	top: 0;
+  	left: 0;
+  	overflow-x: hidden;
+  	transition: 0.5s;
+  	padding-top: 60px;
+}
+
+#close{
+	padding-left: 250px;
+	padding-bottom: 5px !important;
+	font-size: 15px !important;
+}
+
+.side-menu a{
+	color: white;
+	display: block;
+	text-decoration: none;
+	padding: 10px 20px;
+	font-size: 20px;
+	transition: 0.4s;
+}
+
+.nav-two{
+	background-color: blue;
+	margin: 0px;
+	/*height: 40px;*/
+	padding-left: 150px;
+	/*padding-top: 15px;
+	padding-bottom: 15px;*/
+}
+
+.two-button{
+	padding: 10px;
+}
+
+.two-button a{
+	text-decoration: none;
+	color: white !important;
+	font-size: 15px;
+	padding: 0 50px;
+}
+
+.two-button:hover {
+	border: 1px blue solid;
+	background-color: #3087DD;
+
+}
+
+.two-button a:hover{
+	color: blue !important;
+}
+
+.welcome-message{
+	padding-top: 200px;
+	color: blue;
+	/*text-align: center;*/
+	font-size: 50px;
+	position: relative;
+  	animation-name: example;
+ 	animation-duration: 6s;
+ 	animation-iteration-count: infinite;
+}
+
+@keyframes example {
+  0%   {left:0%;}
+  5%   {left:5%;}
+  10%   {left:10%;}
+  15%   {left:15%;}
+  20%   {left:20%;}
+  25%   {left:25%;}
+  30%  {left:30%}
+  35%  {left:35%}
+  40%  {left:40%}
+  45%  {left:45%}
+  50%  {left:50%}
+  55%  {left:55%}
+  60%  {left:60%}
+  65%  {left:65%}
+  70%  {left:70%}
+  75%  {left:75%}
+  80%  {left:80%}
+  85%  {left:85%}
+  90%  {left:90%}
+  95%  {left:95%}
+  100% {left:100%}
+}
+
+/*form*/
+.center-div{
+	margin: auto;
+	padding: 100px 50px;
+}
+
+/*footer*/
+.footer{
+	background-color: blue;
+	color: white;
+	width: 100%;
+	padding: 15px 100px;
+	position: fixed;
+	top: 90%;
+}
+
+
+/*Media queries*/
+
+/*Second nav query*/
+@media screen and (max-width: 450px) and (min-width: 200px){
+	.two-button{
+		display: none;
+	}
+
+	.welcome-message{
+		padding-top: 100px;
+		font-size: 20px;
+	}
+
+	.nav-one img{
+		display: none;
+	}
+
+	.footer{
+		padding: 15px 20px;
+	}
+
+}
+
+@media screen and (max-height: 1366px) and (min-height: 1024px){
+	.footer{
+		position: fixed;
+		top: 94%;
+	}
+}
+
+@media screen and (max-height: 823px) and (min-height: 700px){
+	.footer{
+		position: fixed;
+		top: 92%;
+	}
+}
+
+
