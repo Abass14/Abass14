@@ -1,19 +1,23 @@
-<?php require_once "head.php" ?>
+<?php require_once "head.php";
+	
+	session_start();
+
+?>
 
 <body>
 	<?php require_once "nav.php" ?>
-	<div>
-		<div class="row">
-			<div class="center-div col-md-6 col-sm-12 border mt-4 px-5">
+	<div class="rel-body">
+		<div class="row main-form">
+			<div class="form-cover mx-auto border mt-4 px-5 text-primary">
 				<h2 class="text-center py-3">Select VIN Label</h2>
-				<form class="form-group" method="POST" action="vinid-process.php">
-					<div class="row">
+				<form class="form-group mx-auto" method="POST" action="vin-id-process.php">
+					<div class="row mx-auto">
 						<div class="col-sm-3 col-md-3 col-sm-12">
 							<label>
 								VIN Label
 							</label>
 						</div>
-						<div class="col-sm-9 col-md-9 col-sm-12">
+						<div class="col-lg-8 col-md-8 col-sm-12">
 							<select name="vin" class="form-control">
 								<option>Select--</option>
 								<option value="A">A</option>
@@ -46,9 +50,20 @@
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-sm-3 center-block m-auto py-4">
+						<div class="col-sm-3 m-auto py-4">
 							<input type="submit" name="submit" class="btn btn-primary" value="Submit">
 						</div>
+					</div>
+					<div class="col-md-8 mx-auto">
+						<?php
+							if (isset($_SESSION['msg']) && $_SESSION['msg']) {
+								echo $_SESSION['msg'];
+								unset($_SESSION['msg']);
+							}elseif (isset($_SESSION['errormsg']) && $_SESSION['errormsg']) {
+								echo $_SESSION['errormsg'];
+								unset($_SESSION['errormsg']);
+							}
+						 ?>
 					</div>
 				</form>
 			</div>

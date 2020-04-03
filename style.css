@@ -2,20 +2,29 @@
 	overflow-x: hidden;
 	font-family: 'Amiri', serif;
 }
-/*NAV*/
-
+/*NAViGATION STYLINGS*/
 .nav-one{
-	/*height: 60px;*/
 	padding: 0px;
+}
+
+.rel-body{
+	margin-top: 122px;
+}
+
+#rel-body{
+	margin-top: 122px !important;
 }
 
 .nav-one{
 	padding: 20px 50px;
+	position: fixed;
+	top: 0;
+	width: 100%;
 }
 
 .nav-one a{
 	font-size: 25px;
-	text-decoration: none;
+	text-decoration: none !important;
 	color: white !important;
 	display: inline;
 }
@@ -62,8 +71,9 @@
 	margin: 0px;
 	/*height: 40px;*/
 	padding-left: 150px;
-	/*padding-top: 15px;
-	padding-bottom: 15px;*/
+	position: fixed;
+	top: 78px;
+	width: 100%;
 }
 
 .two-button{
@@ -77,6 +87,11 @@
 	padding: 0 50px;
 }
 
+.two-button a:visited{
+	background-color: white;
+	color: blue;
+}
+
 .two-button:hover {
 	border: 1px blue solid;
 	background-color: #3087DD;
@@ -87,10 +102,11 @@
 	color: blue !important;
 }
 
+/*HOME MESSAGE*/
 .welcome-message{
+	margin-top: 120px !important; 
 	padding-top: 200px;
 	color: blue;
-	/*text-align: center;*/
 	font-size: 50px;
 	position: relative;
   	animation-name: example;
@@ -99,36 +115,29 @@
 }
 
 @keyframes example {
-  0%   {left:0%;}
-  5%   {left:5%;}
-  10%   {left:10%;}
-  15%   {left:15%;}
-  20%   {left:20%;}
-  25%   {left:25%;}
-  30%  {left:30%}
-  35%  {left:35%}
-  40%  {left:40%}
-  45%  {left:45%}
-  50%  {left:50%}
-  55%  {left:55%}
-  60%  {left:60%}
-  65%  {left:65%}
-  70%  {left:70%}
-  75%  {left:75%}
-  80%  {left:80%}
-  85%  {left:85%}
-  90%  {left:90%}
-  95%  {left:95%}
-  100% {left:100%}
+  0%   {left:-50%;}
+  100%   {left:100%;}
 }
 
-/*form*/
+/*FORM*/
 .center-div{
 	margin: auto;
 	padding: 100px 50px;
 }
 
-/*footer*/
+.form-cover{
+	width: 40%;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.form-cover input{
+	display: block;
+	margin: auto;
+}
+
+
+/*FOOTER*/
 .footer{
 	background-color: blue;
 	color: white;
@@ -138,11 +147,65 @@
 	top: 90%;
 }
 
+/*VIN-LOCATION DROP DOWN MENU*/
 
-/*Media queries*/
+#brand-drop{
+	height: 0;
+	transition: 0.5s;
+}
 
-/*Second nav query*/
+#brand-drop a{
+	text-decoration:  none;
+	color: blue !important;
+	display: block;
+	transition: 1s;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+
+.select-bar, .brand-drop{
+	width: 50% !important;
+}
+
+.brand-drop{
+	overflow-y: scroll;
+	height: 500px;
+}
+
+
+/*FIXED SCROLL-UP ARROW*/
+.arrow-up{
+	font-size: 25px;
+	position: fixed;
+	top: 80%;
+	left: 78%;
+	transition: 1s;
+}
+
+.arrow-up a{
+	transition: 1s;
+}
+
+.div-center{
+	padding-top: 70px !important;
+	padding-bottom: 150px !important;
+	width: 50%;
+}
+
+
+/*MEDIA QUERIES*/
+
+/*SMARTPHONE WIDTH QUERIES*/
 @media screen and (max-width: 450px) and (min-width: 200px){
+	.div-center{
+		width: 80%;
+	}
+
+	.select-bar, .brand-drop{
+		width: 80% !important;
+		margin: auto;
+	}
 	.two-button{
 		display: none;
 	}
@@ -160,8 +223,22 @@
 		padding: 15px 20px;
 	}
 
+	.form-cover{
+		width: 80%;
+	}
+
+	.form-cover label{
+		display: none;
+	}
+
+	.form-cover input{
+		display: block;
+		margin: auto;
+	}
+
 }
 
+/*IPAD HEIGHT QUERIES*/
 @media screen and (max-height: 1366px) and (min-height: 1024px){
 	.footer{
 		position: fixed;
@@ -174,6 +251,28 @@
 		position: fixed;
 		top: 92%;
 	}
+}
+
+/*IPAD WIDTH QUERIES*/
+@media screen and (max-width: 1024px) and (min-width: 700px){
+	.div-center{
+		width: 80%;
+	}
+
+	.select-bar, .brand-drop{
+		width: 80% !important;
+		margin: auto;
+	}
+
+	.form-cover{
+		width: 60%;
+	}
+
+	.form-cover input{
+		display: block;
+		margin: auto;
+	}
+
 }
 
 
