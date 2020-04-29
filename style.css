@@ -2,6 +2,10 @@
 	overflow-x: hidden;
 	font-family: 'Amiri', serif;
 }
+
+html{
+	scroll-behavior: smooth;
+}
 /*NAViGATION STYLINGS*/
 .nav-one{
 	padding: 0px;
@@ -49,6 +53,7 @@
   	overflow-x: hidden;
   	transition: 0.5s;
   	padding-top: 60px;
+  	color: white !important;
 }
 
 #close{
@@ -193,6 +198,106 @@
 	width: 50%;
 }
 
+/*BRANDS*/
+
+.headn{
+	margin-top: 122px;
+	padding-top: 50px;
+}
+
+.theBrands{
+	/*margin-top: 122px;*/
+	display: flex;
+	justify-content: center;
+
+}
+
+.theBrands2 img{
+	display: block;
+	margin: auto;
+}
+
+
+.theBrands2{	
+	display: flex;
+	justify-content: center;
+
+}
+
+.theBrands2 img{
+	display: block;
+	margin: auto;
+}
+
+
+/*Guide page*/
+
+.flex-container{
+	margin-top: 122px;
+	margin-bottom: 50px;
+}
+
+.grid-container{
+	display: grid;
+	grid-template-columns: auto auto;
+}
+
+/*.grid-a {
+	grid-column-start: 1;
+	grid-column-end: 3
+}*/
+.flex-container input, textarea{
+	display: block;
+	width: 300px !important;
+	margin: 15px 0px;
+	padding: 10px 5px;
+}
+
+.flex-container input{
+	border-top: none;
+	border-left: none;
+	border-right: none; 
+}
+
+.textA{
+	height: 200px !important;
+}
+
+.grid-b{
+	margin-top: 40px;
+	padding-top: 40px;
+}
+
+.topic{
+	border-bottom: 1px solid #C19B9B;
+}
+
+.latest{
+	display: block;
+	margin: auto;
+	width: 150px;
+	transition: 3s;
+}
+
+.latest a{
+	text-decoration: none;
+}
+
+.latest a:hover{
+	color: white;
+}
+
+.reply{
+	height: 0px;
+	width: 0px;
+	transition: 0.5s;
+}
+
+.reply-text{
+	height: 100px !important;
+}
+
+
 
 /*MEDIA QUERIES*/
 
@@ -236,6 +341,33 @@
 		margin: auto;
 	}
 
+	.theBrands{
+		display: block;
+	}
+
+	.theBrands2{
+		display: block;
+	}
+
+	.headn{
+		padding-top: 20px;
+	}
+
+	.grid-container{
+		display: block;
+	}
+
+	.flex-container input, textarea{
+		display: block;
+		width: 100% !important;
+		margin: 15px 0px;
+		padding: 10px 5px;
+	}
+
+	.grid-b{
+		margin-top: 10px;
+		padding-top: 40px;
+	}
 }
 
 /*IPAD HEIGHT QUERIES*/
@@ -271,6 +403,16 @@
 	.form-cover input{
 		display: block;
 		margin: auto;
+	}
+
+	.theBrands img{
+		width: 150px;
+		height: 150px;
+	}
+
+	.theBrands2 img{
+		width: 150px;
+		height: 150px;
 	}
 
 }

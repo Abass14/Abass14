@@ -10,7 +10,7 @@
 		<div class="two-button"><a href="guide.php">Guide</a></div>
 	</div>
 	<div id="side-menu" class="side-menu">
-		<a href="" id="close" onclick="closeNav()"><i class="fi-ctluxl-times-thin"></i></a>
+		<span href="" id="close" onclick="closeNav()"><i class="fi-ctluxl-times-thin"></i></span>
 		<a href="vin-id.php">Vin-ID</a>
 		<a href="vin-location.php">Vin-Location</a>
 		<a href="guide.php">Guide</a>
